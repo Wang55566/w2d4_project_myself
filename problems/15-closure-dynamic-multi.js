@@ -17,10 +17,17 @@ multiplyByFive(5); // returns 25
 
 
 ***********************************************************************/
-
+// dynamicMultiply(num) ruturns new function allwoing us to create new multiply functions
 // Your code here
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
+function dynamicMultiply(num) {
+
+  return function (num2) {
+
+    return num * num2;
+  }
+}
 
 try {
   module.exports = dynamicMultiply;

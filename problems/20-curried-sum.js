@@ -44,6 +44,23 @@ AFTER YOU ARE FINISHED WITH THIS PROBLEM, ASK FOR A CODE REVIEW
 ***********************************************************************/
 
 // Your code here
+function curriedSum(n) {
+
+  let  sum = 0;
+
+  return function (value) {
+
+    sum +=value;
+
+    if(n > 1) {
+      n--;
+    }else {
+      return sum;
+    }
+  }
+
+  return curriedSum;
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

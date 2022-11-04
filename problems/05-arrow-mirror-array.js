@@ -11,6 +11,17 @@ arrowMirrorArray(['a', 'b', 'c', 'd']); // => [ 'a', 'b', 'c', 'd', 'd', 'c', 'b
 ***********************************************************************/
 
 // Your code here
+let arrowMirrorArray = arr => {
+
+  let reverseArr = [];
+
+  for(let i = arr.length - 1; i >=0; i--) {
+
+    reverseArr.push(arr[i]);
+  }
+
+  return [...arr,...reverseArr];
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

@@ -14,8 +14,17 @@ console.log(twentyPercent([10, 20, 30])); // [ 8, 16, 24 ]
 
 
 ***********************************************************************/
-
+//input: a number applied to discount
+//return a function accepts an array of prices.
 // Your code here
+function coupon(discount) {
+
+  return function(array) {
+
+    return array.map( el => el * (1 - discount));
+  }
+}
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

@@ -8,6 +8,7 @@ be added to the collection.
 Once the function returned by coinCollector has the numCoins required it will
 return an array of the coins it has gathered.
 
+
 Example 1:
   let oneCoin = coinCollector(1); // returns a function
   console.log(oneCoin(10)); // prints [10]
@@ -24,8 +25,30 @@ Example 3:
   console.log(threeCoins(10)); // prints [ 25, 5, 10 ]
 
 ***********************************************************************/
+//input: number of coin accepted
+//output: function invoked numbers of time passing in one coin
 
 // Your code here
+
+function coinCollector(number) {
+
+  let arr = []
+
+  return function (coin) {
+
+    arr.push(coin);
+
+    if(number > 1) {
+
+      number--;
+    } else {
+
+      return arr;
+    }
+  }
+
+  return coinCollector;
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

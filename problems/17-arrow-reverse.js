@@ -15,6 +15,7 @@ let result3 = arrowReverseString("potato"); // returns "otatop"
 // Your code here
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
+let arrowReverseString = str => str.split('').reverse().join('');
 
 try {
   module.exports = arrowReverseString;

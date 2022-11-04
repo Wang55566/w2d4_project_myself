@@ -17,6 +17,13 @@ console.log(rudePerson2("I love dogs")); // prints "I yo love yo dogs"
 ***********************************************************************/
 
 // Your code here
+function interrupter(interruptingWord) {
+
+  return function(str) {
+
+    return str.split(' ').join(' '+ interruptingWord + ' ');
+  }
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

@@ -29,6 +29,21 @@ Example 4:
 ***********************************************************************/
 
 // Your code here
+let countDownTimer = n => {
+
+  let sayHappyNewYear = () => {
+
+    console.log("Happy New Year")
+  }
+
+  if(n <= 1) {
+    return sayHappyNewYear();
+    }
+  n--;
+
+  return sayHappyNewYear;
+}
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

@@ -23,6 +23,34 @@ console.log(smoothie2("pineapple"));
 ***********************************************************************/
 
 // Your code here
+function smoothieMachine() {
+
+  let str = "I'm having a smoothie";
+
+  return function(...order) {
+
+    if(!str.includes('with')) {
+
+      for(let i = 0; i < order.length; i++) {
+
+        if(i===0) {
+
+          str += ' with ' + order[i];
+        } else {
+
+          str += ' and ' + order[i];
+        }
+      }
+    } else {
+
+      for(let el of order) {
+
+        str+= ' and ' + el;
+      }
+    }
+    return str;
+  }
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {
